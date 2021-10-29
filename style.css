@@ -1,0 +1,60 @@
+html {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f7f4eb;
+    width: 700px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conversionBtn {
+    width: 130px;
+    height: 40px;
+} 
+
+.convertBtn {
+    width: 146px;
+    height: 44px;
+}
+
+button p{
+    margin: 2px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Cutive', serif;
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    max-width: 540px;
+    font-family: 'Cutive', serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Cutive', serif;
+}
+
+h2,h3,h4,h5 {
+    font-family: 'Cutive', serif;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="row">
+        <h1>Morse code Encoder<br>& Decoder</h1>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="row">
+                <button id="changeConversion" class="conversionBtn"><p> Change mode</p></button>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <h4 style="margin: 20px 1px 0px; text-align: center;">Mode:</h4>
+                    <p id="status" style="margin: 0px;">Encoding</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="row">
+                <p>Input</p>
+            </div>
+            <div class="column" style="gap: 15px; align-items: center;">
+                <textarea id="textInput" cols="70" rows="10"></textarea>
+                <button id="convert" class="convertBtn"><p>Encode/Decode</p></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>Output</p>
+            <textarea id="textOutput" cols="70" rows="10" disabled></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <p style="width: 480px;">Instructions:<br>1. Select whether to Encode or decode a message<br>2. Insert message into the input box<br>3. press the encode/decode button<br><br>Notes:<br>* Words are composed of "." & "-"<br>* Each letter is separated by a space<br>* Each word is separated with "|", in addition to being between two spaces<br>* The international morse code is used, but some special characters are absent here</p>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
