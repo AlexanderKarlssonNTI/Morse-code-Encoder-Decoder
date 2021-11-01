@@ -2,14 +2,22 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #f7f4eb;
     width: 700px;
+}
+
+.inputOutput {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .row {
@@ -59,3 +67,15 @@ h2,h3,h4,h5 {
     font-family: 'Cutive', serif;
 }
 
+@media screen and (max-width: 600px){
+    body {
+        width: 100%;
+        padding-left:50px;
+        padding-right:50px;
+    }
+    .inputOutput {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
