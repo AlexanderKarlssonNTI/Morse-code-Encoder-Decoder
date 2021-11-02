@@ -9,13 +9,15 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: #f7f4eb;
-    width: 600px;
+    width: 100%;
+    margin: 0;
 }
 
 .inputOutput {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -52,7 +54,7 @@ p {
 textarea {
     resize: none;
     outline: none;
-    max-width: 540px;
+    width: 540px;
     font-family: 'Cutive', serif;
 }
 
@@ -65,11 +67,17 @@ h2,h3,h4,h5 {
     font-family: 'Cutive', serif;
 }
 
+.instructions {
+    width: 480px;
+}
+
 @media screen and (max-width: 600px){
-    body {
-        width: 100%;
-    }
     .inputOutput {
+        width: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    textarea {
         width: 100%;
     }
 }

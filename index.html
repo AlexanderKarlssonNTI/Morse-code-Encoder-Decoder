@@ -27,27 +27,25 @@
             </div>
         </div>
     </div>
-    <div class="inputOutput">
-        <div class="column">
+    <div class="row">
+        <div class="inputOutput">
             <div class="row">
                 <p>Input</p>
             </div>
-            <div class="column" style="gap: 15px; align-items: center;">
-                <textarea id="textInput" cols="70" rows="10"></textarea>
-                <button id="convert" class="convertBtn"><p>Encode/Decode</p></button>
-            </div>
+            <textarea id="textInput" cols="70" rows="10" style="margin-bottom: 20px;"></textarea>
+            <button id="convert" class="convertBtn"><p>Encode/Decode</p></button>
         </div>
     </div>
-    <div class="inputOutput">
-        <div class="column">
+    <div class="row">
+        <div class="inputOutput">
             <div class="row">
                 <p>Output</p>
             </div>
             <textarea id="textOutput" cols="70" rows="10" disabled></textarea>
         </div>
     </div>
-    <div class="row">
-        <p style="width: 480px;">Instructions:<br>1. Select whether to Encode or decode a message<br>2. Insert message into the input box<br>3. press the encode/decode button<br><br>Notes:<br>* Words are composed of "." & "-"<br>* Each letter is separated by a space<br>* Each word is separated with "|", in addition to being between two spaces<br>* The international morse code is used, but some special characters are absent here</p>
+    <div class="row"> 
+        <p class="instructions">Instructions:<br>1. Select whether to Encode or decode a message<br>2. Insert message into the input box<br>3. press the encode/decode button<br><br>Notes:<br>* Words are composed of "." & "-"<br>* Each letter is separated by a space<br>* Each word is separated with "|", in addition to being between two spaces<br>* The international morse code is used, but some special characters are absent here</p>
     </div>
     <script src="code.js"></script>
 </body>
