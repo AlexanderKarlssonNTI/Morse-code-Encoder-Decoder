@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 
-.row {
+.row, .title {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -74,10 +74,18 @@ h2,h3,h4,h5 {
 @media screen and (max-width: 600px){
     .inputOutput {
         width: auto;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 26px;
+        padding-right: 26px;
     }
     textarea {
         width: 100%;
+    }
+    .instructions {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .title {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
